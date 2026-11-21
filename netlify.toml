@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm run netlify-build"
+  command = "pnpm exec drizzle-kit migrate && pnpm run netlify-build"
   publish = "dist"
 
 [build.environment]
